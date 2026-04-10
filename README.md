@@ -49,9 +49,9 @@ ESP32 BLE scanner that discovers beacons, extracts metadata (MAC, RSSI, UUIDs), 
 - ReactJS dashboard with live updates  
 
 **Github:**
-    - Server: https://github.com/kp003919/ESP32_GATT_SERVER_BLE.git
-    - Client: https://github.com/kp003919/GATT_Client_BLE.git
-    - Demo: https://github.com/kp003919/BLE_Server_Client-Demo.git
+- Server: https://github.com/kp003919/ESP32_GATT_SERVER_BLE.git
+- Client: https://github.com/kp003919/GATT_Client_BLE.git
+- Demo: https://github.com/kp003919/BLE_Server_Client-Demo.git
 
 ## 🔧 4. Real‑Time IoT Dashboard (ReactJS + ESP32 + Node‑RED)  
 **Tech:** ReactJS, TypeScript, Node‑RED, MQTT, WebSockets, ESP32  
