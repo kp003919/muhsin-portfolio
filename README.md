@@ -81,6 +81,10 @@ Includes DHT sensor page, RTLS view, BLE beacon inspector, and actuator control 
 **Control Panel**  
 ![Control Panel](Control.jpeg)
 
+**Embedded Protocols Panel**  
+![Embedded Protocols Panel](embeddedProtocols.jpeg)
+
+
 
 **Highlights**
 - Real‑time WebSocket/MQTT updates  
