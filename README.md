@@ -79,10 +79,8 @@ Includes DHT sensor page, RTLS view, BLE beacon inspector, and actuator control 
 ![RTLS](RTLS.jpeg)
 
 **Control Panel**  
-![Control Panel](Control.jpg)
+![Control Panel](Control.jpeg)
 
-**Prototyping View**  
-![Prototype](Prototypic.jpeg)
 
 **Highlights**
 - Real‑time WebSocket/MQTT updates  
