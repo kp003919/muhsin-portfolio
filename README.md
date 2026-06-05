@@ -15,6 +15,15 @@ My work focuses on:
 
 ---
 
+## ⭐ Top Projects (Quick Links)
+- **ESP32 PID Temperature Control System** — Real‑time control loop + FreeRTOS  
+- **GPIO Interrupt Engine** — ISR pipeline + deterministic event handling  
+- **BLE Beacon Scanner** — Wireless scanning + real‑time dashboard  
+- **IoT Dashboard** — ReactJS + MQTT + multi‑device telemetry  
+- **Hardware‑in‑the‑Loop CI** — Automated build/flash/test pipeline  
+
+---
+
 ## 🔧 1. ESP32 PID Temperature Control System  
 **Tech:** C/C++, ESP32, FreeRTOS, PWM  
 **Category:** Embedded Systems · Control Theory · Real‑Time Firmware  
@@ -27,6 +36,9 @@ Designed to demonstrate deterministic timing, stable control behaviour, and tuna
 - Deterministic FreeRTOS control loop  
 - Thermal simulation with noise/disturbance modelling  
 - Serial plotting for real‑time tuning and analysis  
+
+**Why it matters:** Shows real‑time control behaviour and FreeRTOS timing guarantees.  
+**Skills demonstrated:** PID tuning, timing analysis, FreeRTOS scheduling.
 
 **GitHub:**  
 https://github.com/kp003919/PID_Demo.git
@@ -46,6 +58,9 @@ Implements a deterministic event pipeline suitable for real‑time embedded appl
 - FreeRTOS semaphores, queues, and notifications  
 - State‑machine execution triggered by ISR events  
 
+**Why it matters:** Demonstrates interrupt‑driven design and deterministic event handling.  
+**Skills demonstrated:** ISR design, concurrency, FreeRTOS primitives.
+
 **GitHub:**  
 https://github.com/kp003919/ISR_Demos.git
 
@@ -62,6 +77,9 @@ An ESP32‑based BLE scanner that discovers nearby beacons, extracts metadata (M
 - Advertisement parsing (MAC, RSSI, UUIDs)  
 - Node‑RED pipeline for filtering, timestamping, and routing  
 - ReactJS dashboard with live updates and device diagnostics  
+
+**Why it matters:** Shows wireless communication, data parsing, and real‑time telemetry.  
+**Skills demonstrated:** BLE GAP, MQTT pipelines, dashboard integration.
 
 **GitHub:**  
 - Server: https://github.com/kp003919/ESP32_GATT_SERVER_BLE.git  
@@ -83,6 +101,9 @@ Includes DHT sensor monitoring, RTLS visualisation, BLE beacon inspection, and a
 - Multi‑page routing with dynamic device views  
 - Embedded protocol tester (UART/I²C/SPI/Modbus)  
 
+**Why it matters:** Demonstrates full IoT pipeline from device → cloud → UI.  
+**Skills demonstrated:** MQTT/WebSockets, UI engineering, multi‑device telemetry.
+
 **GitHub:**  
 https://github.com/kp003919/ReactJS_Dashboard.git
 
@@ -99,6 +120,9 @@ A fully automated hardware‑in‑the‑loop (HIL) pipeline that builds firmware
 - Python‑based serial test harness  
 - Functional tests for DHT, BLE, RTLS, UART/I²C/SPI  
 - Reproducible builds and rapid feedback cycles  
+
+**Why it matters:** Shows ability to automate embedded testing — rare and valuable.  
+**Skills demonstrated:** CI/CD, Python automation, hardware testing.
 
 **GitHub:**  
 https://github.com/kp003919/ESP32_GITHUP_ACTION_CI.git
