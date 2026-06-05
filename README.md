@@ -1,5 +1,4 @@
-# Mini Project Portfolio – Muhsin Atto  
-**Embedded Software Engineer | Real‑Time Systems | ESP32 | ARM Cortex‑M | FreeRTOS**
+# Embedded Software Engineer | Real‑Time Systems | ESP32 | ARM Cortex‑M | FreeRTOS
 
 This portfolio showcases a collection of embedded systems, real‑time firmware, and IoT engineering projects built using ESP32, STM32, and ARM Cortex‑M microcontrollers.
 
