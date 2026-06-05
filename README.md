@@ -1,8 +1,18 @@
 # Mini Project Portfolio – Muhsin Atto  
 **Embedded Software Engineer | Real‑Time Systems | ESP32 | ARM Cortex‑M | FreeRTOS**
 
-This portfolio showcases a collection of embedded systems, real‑time firmware, and IoT engineering projects I have built using ESP32, STM32, and ARM Cortex‑M microcontrollers. Each project demonstrates practical engineering skills including driver development, interrupt handling, FreeRTOS task design, BLE communication,
-control systems, and hardware‑in‑the‑loop testing.
+This portfolio showcases a collection of embedded systems, real‑time firmware, and IoT engineering projects built using ESP32, STM32, and ARM Cortex‑M microcontrollers.
+
+My work focuses on:
+
+- Low‑level driver development  
+- Interrupt‑driven design  
+- FreeRTOS task scheduling  
+- BLE communication  
+- Real‑time control loops  
+- IoT data pipelines  
+- Hardware‑in‑the‑loop testing  
+- Automated CI workflows  
 
 ---
 
@@ -11,13 +21,13 @@ control systems, and hardware‑in‑the‑loop testing.
 **Category:** Embedded Systems · Control Theory · Real‑Time Firmware  
 
 A real‑time PID controller implemented on the ESP32 with a simulated thermal model.  
-Includes FreeRTOS timing, PWM output, disturbance simulation, and serial‑based tuning.
+Designed to demonstrate deterministic timing, stable control behaviour, and tunable PID parameters.
 
-**Highlights**
-- Custom PID implementation  
-- Real‑time loop with deterministic timing  
-- Thermal simulation with noise/disturbances  
-- Serial plotting for tuning and analysis  
+### Highlights
+- Custom PID controller with tunable gains  
+- Deterministic FreeRTOS control loop  
+- Thermal simulation with noise/disturbance modelling  
+- Serial plotting for real‑time tuning and analysis  
 
 **GitHub:**  
 https://github.com/kp003919/PID_Demo.git
@@ -28,14 +38,14 @@ https://github.com/kp003919/PID_Demo.git
 **Tech:** ESP‑IDF, C, FreeRTOS  
 **Category:** Firmware · Interrupts · Real‑Time Systems  
 
-Low‑latency ISR pipeline using IRAM‑safe interrupts and FreeRTOS task notifications.  
-Demonstrates clean ISR/application separation and deterministic state‑machine behaviour.
+A low‑latency interrupt engine demonstrating clean ISR/application separation using IRAM‑safe ISRs and FreeRTOS task notifications.  
+Implements a deterministic event pipeline suitable for real‑time embedded applications.
 
-**Highlights**
-- IRAM‑safe ISRs  
+### Highlights
+- IRAM‑safe interrupt service routines  
 - Multi‑stage event pipeline  
-- FreeRTOS semaphores & notifications  
-- State machine driven by ISR events  
+- FreeRTOS semaphores, queues, and notifications  
+- State‑machine execution triggered by ISR events  
 
 **GitHub:**  
 https://github.com/kp003919/ISR_Demos.git
@@ -46,16 +56,13 @@ https://github.com/kp003919/ISR_Demos.git
 **Tech:** ESP32, C/C++, BLE GAP, Node‑RED, MQTT/WebSocket, ReactJS  
 **Category:** Wireless Systems · Embedded Firmware · Real‑Time Data Pipelines  
 
-ESP32 BLE scanner that discovers beacons, extracts metadata (MAC, RSSI, UUIDs), and streams results into a real‑time dashboard.
+An ESP32‑based BLE scanner that discovers nearby beacons, extracts metadata (MAC, RSSI, UUIDs), and streams results into a real‑time dashboard via MQTT/WebSockets.
 
-### 📸 UI Preview  
-![Beacon Scanner](Beacons.jpeg)
-
-**Highlights**
-- BLE GAP scanning (active/passive)  
+### Highlights
+- Active & passive BLE GAP scanning  
 - Advertisement parsing (MAC, RSSI, UUIDs)  
-- Node‑RED pipeline for filtering & timestamping  
-- ReactJS dashboard with live updates  
+- Node‑RED pipeline for filtering, timestamping, and routing  
+- ReactJS dashboard with live updates and device diagnostics  
 
 **GitHub:**  
 - Server: https://github.com/kp003919/ESP32_GATT_SERVER_BLE.git  
@@ -68,28 +75,13 @@ ESP32 BLE scanner that discovers beacons, extracts metadata (MAC, RSSI, UUIDs), 
 **Tech:** ReactJS, TypeScript, Node‑RED, MQTT, WebSockets, ESP32  
 **Category:** IoT Systems · Frontend Engineering · Cloud Integration  
 
-A multi‑page real‑time dashboard visualising live telemetry from ESP32 devices.  
-Includes DHT sensor page, RTLS view, BLE beacon inspector, and actuator control panel.
+A multi‑page real‑time dashboard visualising telemetry from ESP32 devices.  
+Includes DHT sensor monitoring, RTLS visualisation, BLE beacon inspection, and actuator control.
 
-### 📸 UI Preview  
-**Dashboard Overview**  
-![Dashboard](Dashboard.jpeg)
-
-**RTLS View**  
-![RTLS](RTLS.jpeg)
-
-**Control Panel**  
-![Control Panel](Control.jpeg)
-
-**Embedded Protocols Panel**  
-![Embedded Protocols Panel](embeddedProtocols.jpeg)
-
-
-
-**Highlights**
-- Real‑time WebSocket/MQTT updates  
-- Reusable React components  
-- Multi‑page routing  
+### Highlights
+- Real‑time WebSocket/MQTT data streaming  
+- Reusable React components and modular UI design  
+- Multi‑page routing with dynamic device views  
 - Embedded protocol tester (UART/I²C/SPI/Modbus)  
 
 **GitHub:**  
@@ -101,13 +93,13 @@ https://github.com/kp003919/ReactJS_Dashboard.git
 **Tech:** GitHub Actions, GitLab CI, ESP32, Python, Serial Automation  
 **Category:** CI/CD · Embedded Testing · Automation  
 
-A fully automated CI pipeline that builds firmware, flashes a real ESP32, runs hardware‑in‑the‑loop tests, and reports results directly in CI.
+A fully automated hardware‑in‑the‑loop (HIL) pipeline that builds firmware, flashes a real ESP32, executes functional tests, and reports results directly in CI.
 
-**Highlights**
-- Automated build → flash → test → report  
-- Python serial test harness  
+### Highlights
+- Automated build → flash → test → report workflow  
+- Python‑based serial test harness  
 - Functional tests for DHT, BLE, RTLS, UART/I²C/SPI  
-- Reproducible builds and fast feedback  
+- Reproducible builds and rapid feedback cycles  
 
 **GitHub:**  
 https://github.com/kp003919/ESP32_GITHUP_ACTION_CI.git
@@ -121,13 +113,13 @@ https://github.com/kp003919/ESP32_GITHUP_ACTION_CI.git
 - **Wireless:** BLE, Wi‑Fi  
 - **IoT:** MQTT, Node‑RED, ThingsBoard  
 - **Automation:** CI/CD, Python test harnesses  
-- **Frontend:** ReactJS, real‑time UI components
+- **Frontend:** ReactJS, real‑time UI components  
 
 ---
 
 ## 📌 About Me  
 I build clean, reliable, and practical embedded systems — from low‑level firmware and real‑time control loops to IoT pipelines and automated testing.  
-I enjoy working close to hardware, solving real engineering problems, and delivering polished solutions.
+I enjoy working close to hardware, solving real engineering problems, and delivering polished, production‑ready solutions.
 
 ---
 
