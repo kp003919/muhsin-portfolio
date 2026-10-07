@@ -17,7 +17,7 @@ A complete end-to-end system featuring **two interchangeable backends** sharing 
 
 | Repository | Description |
 |---|---|
-| **[MyFirstApi](https://github.com/kp003919/MyFirstApi)** | ASP.NET Core — REST API with EF Core, Swagger, full CRUD & search |
+| **[MyFirstApi](https://github.com/kp003919/FullStackWbApp)** | ASP.NET Core — REST API with EF Core, Swagger, full CRUD & search |
 | **[nodejs-api](https://github.com/kp003919/nodejs-api)** | Node.js / Express — identical API contract, direct SQL, matching responses |
 | **[react-frontend](https://github.com/kp003919/react-frontend)** | React 18 — multi-page routing, backend switcher, form validation, data table |
 
