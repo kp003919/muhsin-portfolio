@@ -77,6 +77,34 @@ Complete BLE implementation — separate server and client repos demonstrating c
 
 ---
 
+### 📶 LTE Modem State Machine — Fault-Tolerant AT-Command Connectivity
+**Tech:** C • ESP32 • LTE modem • AT commands • MQTT • State machines
+**Category:** Embedded Systems · Communications · Fault Recovery · Unit Testing
+
+A layered LTE connectivity stack that takes a modem from power-on to a live MQTT connection (SIM check → network attach → data session → TCP socket → MQTT connect and subscribe), and recovers automatically when any step fails.
+
+**Highlights:**
+- ✅ **One command in flight at a time** — AT replies carry no ID, so the state machine never sends a second command before the first finishes
+- ✅ **Bounded retries and timeouts** — every command has its own retry counter (max 3) and timeout, also checked on a periodic tick so a silent modem is detected
+- ✅ **Escalation to a modem reboot** — when retries run out, the modem is reset and the boot sequence restarts, so the device never loops forever
+- ✅ **Unsolicited messages handled** — registration reports (`+CEREG`) are processed in both URC and query forms, including network lost and registration denied
+- ✅ **Strict layering** — state machine → driver → hardware layer; the state machine never touches hardware directly
+- ✅ **30 host-side tests** — a simulated modem with a fake clock covers success paths, `ERROR` / `+CME ERROR` replies, timeouts, retry exhaustion, locked SIM, and network loss, with no hardware needed
+
+**How it recovers:**
+
+| Failure | Response |
+|---|---|
+| Command returns an error or times out | Retry (up to 3 times), then reboot the modem |
+| Modem silent at boot | Resend `AT` every 2 s (up to 15 times), then reboot |
+| SIM not ready | Boot waits and asks again |
+| Network lost (`+CEREG: 0`) | Re-attach |
+| Registration denied (`+CEREG: 3`) | Counts as a failure towards a reboot |
+
+**GitHub:** [lte_esp_Interface](https://github.com/kp003919/lte_esp_Interface)
+
+-------------
+
 ### 📊 Real-Time IoT Dashboard (React + ESP32)
 **Tech:** ReactJS • TypeScript • MQTT • WebSockets • Node-RED • ESP32  
 **Category:** IoT Systems · Frontend Engineering · Cloud Integration
