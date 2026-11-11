@@ -32,6 +32,7 @@ A complete end-to-end system featuring **two interchangeable backends** sharing 
 
 ### 🔧 ESP32 PID Temperature Control System
 **Tech:** C/C++ • ESP32 • FreeRTOS • PWM  
+
 **Category:** Embedded Systems · Control Theory · Real-Time Firmware
 
 A real-time PID controller with simulated thermal model — demonstrating deterministic timing, stable control behaviour, and tunable parameters.
@@ -47,6 +48,7 @@ A real-time PID controller with simulated thermal model — demonstrating determ
 
 ### ⚡ GPIO Interrupt Engine + FreeRTOS Event Pipeline
 **Tech:** ESP-IDF • C • FreeRTOS  
+
 **Category:** Firmware · Interrupts · Real-Time Systems
 
 Low-latency interrupt-driven design demonstrating clean ISR/application separation using IRAM-safe ISRs and four distinct synchronization mechanisms running in parallel.
