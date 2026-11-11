@@ -81,6 +81,7 @@ Complete BLE implementation — separate server and client repos demonstrating c
 
 ### 📶 LTE Modem State Machine — Fault-Tolerant AT-Command Connectivity
 **Tech:** C • ESP32 • LTE modem • AT commands • MQTT • State machines
+
 **Category:** Embedded Systems · Communications · Fault Recovery · Unit Testing
 
 A layered LTE connectivity stack that takes a modem from power-on to a live MQTT connection (SIM check → network attach → data session → TCP socket → MQTT connect and subscribe), and recovers automatically when any step fails.
